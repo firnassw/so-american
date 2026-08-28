@@ -121,7 +121,7 @@
 <div class="container">
   <div id="output"></div>
   <audio id="song" src="Olivia Rodrigo - so american.mp3" loop crossorigin="anonymous"></audio>
-  <img id="bgImage" src="gambar-background.jpeg" crossorigin="anonymous">
+  <img id="bgImage" src="https://i.ibb.co.com/1Yq4Gvwp/gambar-background.jpg" crossorigin="anonymous">
 
   <div class="player-controls" id="playerControls">
     <div class="side-visual">&lt;&lt; ==</div>
@@ -260,7 +260,7 @@
       let fontWeight = 'bold';
 
       if (isPhotoPhase) {
-        fontSize = 14; // Ukuran diperkecil agar lirik tidak memakan seluruh layar
+        fontSize = 14; 
         fontFamily = '"Arial Black", Impact, sans-serif';
         fontWeight = '900'; 
       }
@@ -291,7 +291,7 @@
 
       for (let i = 0; i < lines.length; i++) {
         if (isPhotoPhase) {
-          ctx.lineWidth = 2; // Garis tepi dipertipis agar lebih bersih
+          ctx.lineWidth = 2; 
           ctx.strokeStyle = `rgba(0, 0, 0, ${opacity})`;
           ctx.strokeText(lines[i], canvas.width / 2, startY + (i * lineHeight));
         }
